@@ -1,5 +1,8 @@
 package infobolt.model;
 
+import infobolt.exceptions.RosszAzonosito;
+import infobolt.exceptions.RosszGyartasiev;
+
 import java.time.LocalDate;
 
 public class Alkatresz {
@@ -8,9 +11,18 @@ public class Alkatresz {
     private String azonosito;
     private int gyartasiev;
     private int garanciaevben;
-    private string leiras;
+    private String leiras;
 
     public Alkatresz() {
+    }
+
+    public Alkatresz(String marka, String tipus, String azonosito, int gyartasiev, int garanciaevben, String leiras) {
+        setMarka(marka);
+        setTipus(tipus);
+        setAzonosito(azonosito);
+        setGyartasiev(gyartasiev);
+        setGaranciaevben(garanciaevben);
+        setLeiras(leiras);
     }
 
     public String getMarka() {
@@ -46,7 +58,10 @@ public class Alkatresz {
         return gyartasiev;
     }
 
-    public void setGyartasiev(int gyartasiev) {
+    public void setGyartasiev(int gyartasiev) throws RosszGyartasiev{
+        if(gyartasiev<0 || gyartasiev> LocalDate.now().getYear()){
+            throw new RosszGyartasiev(String.valueOf(gyartasiev));
+        }
         this.gyartasiev = gyartasiev;
     }
 
