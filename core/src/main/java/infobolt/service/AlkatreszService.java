@@ -8,13 +8,9 @@ import infobolt.exceptions.RosszAzonosito;
 import java.util.Collection;
 
 public interface AlkatreszService {
-    public Collection<Alkatresz> listAllAlkatresz();
-
-    public Alkatresz getAlkatresz(String azonosito) throws RosszAzonosito, AlkatreszNemTalalhato;
-
-    public void addAlkatresz(Alkatresz alkatresz) throws RosszGyartasiev, RosszAzonosito;
-
-    public void delAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato;
-
-    public Collection<Alkatresz> listAllAlkatreszGyartoAlapjan(String gyarto);
+    Collection<Alkatresz> listAllAlkatresz();
+    Alkatresz getAlkatresz(String azonosito) throws RosszAzonosito, AlkatreszNemTalalhato;
+    void addAlkatresz(Alkatresz alkatresz) throws RosszGyartasiev, RosszAzonosito;
+    void delAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato;
+    Collection<Alkatresz> listAllAlkatreszGyartoAlapjan(String gyarto);
 }

@@ -10,19 +10,21 @@ public class Alkatresz {
     private String tipus;
     private String azonosito;
     private int gyartasiev;
-    private int garanciaevben;
+    private String garanciaevben;
     private String leiras;
+    private Allapot allapot;
 
     public Alkatresz() {
     }
 
-    public Alkatresz(String marka, String tipus, String azonosito, int gyartasiev, int garanciaevben, String leiras) {
+    public Alkatresz(String marka, String tipus, String azonosito, int gyartasiev, String garanciaevben, String leiras, Allapot allapot) {
         setMarka(marka);
         setTipus(tipus);
         setAzonosito(azonosito);
         setGyartasiev(gyartasiev);
         setGaranciaevben(garanciaevben);
         setLeiras(leiras);
+        setAllapot(allapot);
     }
 
     public String getMarka() {
@@ -65,11 +67,11 @@ public class Alkatresz {
         this.gyartasiev = gyartasiev;
     }
 
-    public int getGaranciaevben() {
+    public String getGaranciaevben() {
         return garanciaevben;
     }
 
-    public void setGaranciaevben(int garanciaevben) {
+    public void setGaranciaevben(String garanciaevben) {
         this.garanciaevben = garanciaevben;
     }
 
@@ -79,5 +81,25 @@ public class Alkatresz {
 
     public void setLeiras(String leiras) {
         this.leiras = leiras;
+    }
+
+    public Allapot getAllapot() {
+        return allapot;
+    }
+    public void setAllapot(Allapot allapot) {
+        this.allapot = allapot;
+    }
+
+    @Override
+    public String toString() {
+        return "Alkatrész:{" +
+                "Márka='" + marka + '\'' +
+                ", Típus='" + tipus + '\'' +
+                ", Azonosító='" + azonosito + '\'' +
+                ", Gyártási év=" + gyartasiev +
+                ", Garancia évben=" + garanciaevben + " év" +
+                ", Állapot=" + allapot +
+                ", Leírás=" + leiras +
+                '}';
     }
 }
