@@ -9,7 +9,7 @@ public class Alkatresz {
     private String marka;
     private String tipus;
     private String azonosito;
-    private int gyartasiev;
+    private LocalDate gyartasiev;
     private String garanciaevben;
     private String leiras;
     private Allapot allapot;
@@ -17,7 +17,7 @@ public class Alkatresz {
     public Alkatresz() {
     }
 
-    public Alkatresz(String marka, String tipus, String azonosito, int gyartasiev, String garanciaevben, String leiras, Allapot allapot) {
+    public Alkatresz(String marka, String tipus, String azonosito, LocalDate gyartasiev, String garanciaevben, String leiras, Allapot allapot) throws RosszAzonosito, RosszGyartasiev{
         setMarka(marka);
         setTipus(tipus);
         setAzonosito(azonosito);
@@ -48,23 +48,17 @@ public class Alkatresz {
     }
 
     public void setAzonosito(String azonosito) throws RosszAzonosito {
-        if(azonosito.matches("^\\w\\w\\d\\d\\d\\d\\d$")){
-            this.azonosito = azonosito;
-        }
-        else{
-            throw new RosszAzonosito(azonosito);
-        }
+        if(azonosito.matches("^\\w\\w\\d\\d\\d\\d\\d$")) this.azonosito = azonosito;
+        else throw new RosszAzonosito(azonosito);
     }
 
-    public int getGyartasiev() {
+    public LocalDate getGyartasiev() {
         return gyartasiev;
     }
 
-    public void setGyartasiev(int gyartasiev) throws RosszGyartasiev{
-        if(gyartasiev<0 || gyartasiev> LocalDate.now().getYear()){
-            throw new RosszGyartasiev(String.valueOf(gyartasiev));
-        }
-        this.gyartasiev = gyartasiev;
+    public void setGyartasiev(LocalDate gyartasiev) throws RosszGyartasiev{
+        if (gyartasiev.isAfter(LocalDate.MIN) && gyartasiev.isBefore(LocalDate.now())) this.gyartasiev = gyartasiev;
+        else throw new RosszGyartasiev(gyartasiev);
     }
 
     public String getGaranciaevben() {

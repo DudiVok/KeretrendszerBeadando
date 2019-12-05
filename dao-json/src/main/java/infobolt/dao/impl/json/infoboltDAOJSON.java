@@ -3,10 +3,8 @@ package infobolt.dao.impl.json;
 import infobolt.dao.AlkatreszDAO;
 
 
-import infobolt.exceptions.AlkatreszMarVan;
 import infobolt.exceptions.AlkatreszNemTalalhato;
 import infobolt.exceptions.RosszAzonosito;
-import infobolt.exceptions.RosszGyartasiev;
 import infobolt.model.Alkatresz;
 
 
@@ -61,18 +59,18 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         return result;
     }
 
-    public Alkatresz readAlkatresz(String azonosito) throws AlkatreszNemTalalhato {
+    public Alkatresz readAlkatresz(String azonosito) throws AlkatreszNemTalalhato, RosszAzonosito {
         Alkatresz alkatresz = new Alkatresz();
         alkatresz.setAzonosito(azonosito);
 
         Collection<Alkatresz> alkatreszek = readAllAlkatresz();
         for (Alkatresz a : alkatreszek)
             if (a.getAzonosito().equalsIgnoreCase(azonosito))
-                return m;
+                return a;
         throw new AlkatreszNemTalalhato();
 }
 
-    public void insertAlkatresz(Alkatresz alkatresz){
+    public void insertAlkatresz(Alkatresz alkatresz) throws RosszAzonosito {
         try {
             readAlkatresz(alkatresz.getAzonosito());
         } catch (AlkatreszNemTalalhato alkatresznincs) {
@@ -86,7 +84,7 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         }
     }
 
-    public void updateAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato {
+    public void updateAlkatresz(Alkatresz alkatresz) throws RosszAzonosito {
         Collection<Alkatresz> alkatreszek = readAllAlkatresz();
         try {
             Alkatresz selectedAlkatresz = readAlkatresz(alkatresz.getAzonosito());
@@ -104,7 +102,7 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         }
     }
 
-    public void deleteAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato {
+    public void deleteAlkatresz(Alkatresz alkatresz){
         Collection<Alkatresz> alkatreszek = readAllAlkatresz();
         try {
             if (alkatreszek.contains(alkatresz)) {

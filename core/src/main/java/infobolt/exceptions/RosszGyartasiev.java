@@ -1,10 +1,9 @@
 package infobolt.exceptions;
 
-public class RosszGyartasiev extends Exception {
-    public RosszGyartasiev() {
-    }
+import java.time.LocalDate;
 
-    public RosszGyartasiev(String s) {
-        super(s);
+public class RosszGyartasiev extends Exception {
+    public RosszGyartasiev(LocalDate releaseDate) {
+        super(releaseDate.toString());
     }
 }
