@@ -12,5 +12,6 @@ public interface AlkatreszService {
     Alkatresz getAlkatresz(String azonosito) throws RosszAzonosito, AlkatreszNemTalalhato;
     void addAlkatresz(Alkatresz alkatresz) throws RosszGyartasiev, RosszAzonosito;
     void delAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato;
+    void updateAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato;
     Collection<Alkatresz> listAllAlkatreszGyartoAlapjan(String gyarto);
 }

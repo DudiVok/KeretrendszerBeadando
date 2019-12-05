@@ -13,6 +13,10 @@ import java.util.Collection;
 public class InfoServiceIMpl implements AlkatreszService {
     private AlkatreszDAO dao;
 
+    public InfoServiceIMpl(AlkatreszDAO dao) {
+
+    }
+
     public Collection<Alkatresz> listAllAlkatresz() {
         return this.dao.readAllAlkatresz();
     }
@@ -27,6 +31,11 @@ public class InfoServiceIMpl implements AlkatreszService {
 
     public void delAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato {
         dao.deleteAlkatresz(alkatresz);
+    }
+
+    @Override
+    public void updateAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato {
+
     }
 
     public Collection<Alkatresz> listAllAlkatreszGyartoAlapjan(String gyarto) {
