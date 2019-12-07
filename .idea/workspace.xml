@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="asd:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ff108b49-7e41-4a48-a790-05b7204bbfdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KeretrendszerBeadando.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/infobolt/dao/AlkatreszDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/infobolt/dao/AlkatreszDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/infobolt/service/impl/InfoServiceIMpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/infobolt/service/impl/InfoServiceIMpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/web/WEB-INF/dispatcher-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/asd/src/main/webapp/WEB-INF/dispatcher-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/web/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,6 +29,7 @@
     <ignored path="$PROJECT_DIR$/dao-json/target/" />
     <ignored path="$PROJECT_DIR$/controller/target/" />
     <ignored path="$PROJECT_DIR$/web/target/" />
+    <ignored path="$PROJECT_DIR$/asd/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,48 +40,54 @@
     <session id="111746290">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="java" value="20" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="37" />
           <entry key="json" value="1" />
           <entry key="jsp" value="1" />
-          <entry key="xml" value="14" />
+          <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="37" />
           <entry key="JSON" value="1" />
           <entry key="JSP" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="14" />
+          <entry key="XML" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
           <entry key="gitignore" value="46" />
-          <entry key="java" value="4765" />
+          <entry key="java" value="6073" />
           <entry key="jsp" value="1" />
-          <entry key="xml" value="262" />
+          <entry key="xml" value="264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4765" />
+          <entry key="JAVA" value="6073" />
           <entry key="JSP" value="1" />
           <entry key="PLAIN_TEXT" value="57" />
-          <entry key="XML" value="262" />
+          <entry key="XML" value="264" />
         </counts>
       </usages-collector>
     </session>
@@ -76,46 +95,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/service/impl/InfoServiceIMpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -123,8 +106,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="306">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2091#2092#0" expanded="true" />
+                <element signature="e#2140#2141#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/RosszGyartasiev.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/AlkatreszMarVan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/AlkatreszNemTalalhato.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/service/impl/InfoServiceIMpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/dao/AlkatreszDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,38 +170,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/web/WEB-INF/dispatcher-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="123">
+              <caret line="86" column="57" lean-forward="true" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#readAllAlkatresz#0;class#infoboltDAOJSON#0" />
+                <element signature="method#readAlkatresz#0;class#infoboltDAOJSON#0" />
+                <element signature="e#3852#3863#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,7 +189,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="55" />
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,18 +228,21 @@
         <option value="$PROJECT_DIR$/core/src/main/java/infobolt/dao/AlkatreszDAO.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/infobolt/service/InfoService.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/RosszGyartasiev.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java" />
         <option value="$PROJECT_DIR$/service/pom.xml" />
         <option value="$PROJECT_DIR$/controller/pom.xml" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/web/src/main/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java" />
         <option value="$PROJECT_DIR$/web/src/main/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/src/main/web/WEB-INF/dispatcher-config.xml" />
+        <option value="$PROJECT_DIR$/asd/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/asd/pom.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/infobolt/service/impl/InfoServiceIMpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/infobolt/dao/AlkatreszDAO.java" />
+        <option value="$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java" />
       </list>
     </option>
   </component>
@@ -232,6 +252,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -239,10 +266,27 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="keretrendszer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="keretrendszer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
+    <option name="y" value="91" />
     <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="height" value="956" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -269,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,7 +324,37 @@
             <path>
               <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
               <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
+              <item name="asd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
@@ -369,7 +444,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="infobolt" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
@@ -515,62 +590,28 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keretrendszer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KeretrendszerBeadando" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575534392414" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../keretnorbi/KeretrendszerBeadando-master" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575756563930" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../keretrendszer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\EKE\5. Félév\beadando\KeretrendszerBeadando\asd\src\main\webapp\WEB-INF" />
       <recent name="D:\EKE\5. Félév\beadando\KeretrendszerBeadando\web\src\main\web" />
     </key>
   </component>
@@ -586,6 +627,152 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk1.8.0_231">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="asd:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_keretrendszer_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56518" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="asd:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="unnamed">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_keretrendszer" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56518" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="unnamed" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -600,36 +787,54 @@
       <workItem from="1575279250999" duration="3060000" />
       <workItem from="1575473689631" duration="7120000" />
       <workItem from="1575496982848" duration="3414000" />
-      <workItem from="1575530221832" duration="4154000" />
+      <workItem from="1575530221832" duration="6711000" />
+      <workItem from="1575539268422" duration="2879000" />
+      <workItem from="1575542659981" duration="479000" />
+      <workItem from="1575587757567" duration="982000" />
+      <workItem from="1575673991720" duration="1646000" />
+      <workItem from="1575741571907" duration="10216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20416000" />
+    <option name="totallyTimeSpent" value="39175000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3884026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19989339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35357916" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3264642" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -638,7 +843,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" type="WINDOWED" />
+      <window_info anchor="right" x="905" y="301" width="136" height="437" id="Maven Projects" order="8" type="WINDOWED" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3884026" />
@@ -678,69 +883,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/AlkatreszTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/Allapot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/RosszAzonosito.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/AlkatreszTest.java" />
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/AlkatreszMarVan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/service/impl/AlkatreszServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/service/impl/AlkatreszServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/AlkatreszNemTalalhato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/RosszGyartasiev.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -761,26 +909,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/dao/AlkatreszDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/service/InfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/service/InfoService.java" />
     <entry file="file://$PROJECT_DIR$/dao-json/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -788,79 +917,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
-            <element signature="e#1872#1873#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao-json/src/main/resources/db.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/web/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/unnamed.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -869,36 +934,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="238">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/web.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asd/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asd/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asd/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asd/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/Allapot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/infobolt/controller/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/RosszAzonosito.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/web/WEB-INF/dispatcher-config.xml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/AlkatreszMarVan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/AlkatreszNemTalalhato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/model/Alkatresz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asd/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asd/src/main/webapp/WEB-INF/dispatcher-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/exceptions/RosszGyartasiev.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/infobolt/controller/AlkatreszController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/infobolt/service/AlkatreszService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/dao/AlkatreszDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/infobolt/service/impl/InfoServiceIMpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="568">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao-json/src/main/java/infobolt/dao/impl/json/infoboltDAOJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="86" column="57" lean-forward="true" selection-start-line="86" selection-start-column="57" selection-end-line="86" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#readAllAlkatresz#0;class#infoboltDAOJSON#0" />
+            <element signature="method#readAlkatresz#0;class#infoboltDAOJSON#0" />
+            <element signature="e#3852#3863#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -909,10 +1108,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -920,7 +1121,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -955,7 +1156,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>service</last-edited>
+          <last-edited>web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

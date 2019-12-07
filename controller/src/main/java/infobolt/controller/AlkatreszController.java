@@ -21,7 +21,7 @@ public class AlkatreszController {
         this.service = service;
     }
 
-    @RequestMapping(value = "test")
+    @RequestMapping(value = "collectionsize")
     @ResponseBody
     public String testService() {
         return String.valueOf(service.listAllAlkatresz().size());
@@ -36,21 +36,23 @@ public class AlkatreszController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public void addAlkatresz(@RequestBody Alkatresz alkatresz) throws RosszAzonosito, RosszGyartasiev {
+    public void addAlkatresz(@RequestBody Alkatresz alkatresz) throws RosszAzonosito, RosszGyartasiev, AlkatreszMarVan {
         service.addAlkatresz(alkatresz);
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    @RequestMapping(value = "/update/{azonosito}", method = RequestMethod.POST)
     @ResponseBody
-    public void updateAlkatresz(@RequestBody Alkatresz alkatresz) throws AlkatreszNemTalalhato {
-        service.updateAlkatresz(alkatresz);
+    public void updateAlkatresz(@PathVariable(value = "azonosito") String azonosito, @RequestBody Alkatresz alkatresz) throws AlkatreszNemTalalhato, RosszGyartasiev, RosszAzonosito {
+        service.updateAlkatresz(azonosito, alkatresz);
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+
+    @RequestMapping(value = "/delete/{azonosito}", method = RequestMethod.DELETE)
     @ResponseBody
-    public void deleteAlkatresz(@RequestBody Alkatresz alkatresz) throws AlkatreszNemTalalhato {
-        service.delAlkatresz(alkatresz);
+    public void deleteAlkatresz(@PathVariable(value = "azonosito") String azonosito) throws AlkatreszNemTalalhato {
+        service.delAlkatresz(azonosito);
     }
+
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody

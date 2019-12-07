@@ -14,10 +14,10 @@ public class Alkatresz {
     private String leiras;
     private Allapot allapot;
 
-    public Alkatresz() {
-    }
+    public Alkatresz() { }
 
-    public Alkatresz(String marka, String tipus, String azonosito, LocalDate gyartasiev, String garanciaevben, String leiras, Allapot allapot) throws RosszAzonosito, RosszGyartasiev{
+    public Alkatresz(String marka, String tipus, String azonosito, LocalDate gyartasiev, String garanciaevben, String leiras, Allapot allapot) throws RosszAzonosito, RosszGyartasiev {
+        this();
         setMarka(marka);
         setTipus(tipus);
         setAzonosito(azonosito);
@@ -48,7 +48,7 @@ public class Alkatresz {
     }
 
     public void setAzonosito(String azonosito) throws RosszAzonosito {
-        if(azonosito.matches("^\\w\\w\\d\\d\\d\\d\\d$")) this.azonosito = azonosito;
+        if(azonosito.length() > 6 && azonosito.length() < 8 && !azonosito.contains("-")) this.azonosito = azonosito; //azonosito.matches("^[A-Z]{2}[0-9]{5}$")
         else throw new RosszAzonosito(azonosito);
     }
 

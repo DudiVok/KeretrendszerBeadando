@@ -1,6 +1,7 @@
 package infobolt.service.impl;
 
 import infobolt.dao.AlkatreszDAO;
+import infobolt.exceptions.AlkatreszMarVan;
 import infobolt.exceptions.AlkatreszNemTalalhato;
 import infobolt.exceptions.RosszAzonosito;
 import infobolt.exceptions.RosszGyartasiev;
@@ -14,7 +15,7 @@ public class InfoServiceIMpl implements AlkatreszService {
     private AlkatreszDAO dao;
 
     public InfoServiceIMpl(AlkatreszDAO dao) {
-
+        this.dao = dao;
     }
 
     public Collection<Alkatresz> listAllAlkatresz() {
@@ -25,17 +26,19 @@ public class InfoServiceIMpl implements AlkatreszService {
         return dao.readAlkatresz(azonosito);
     }
 
-    public void addAlkatresz(Alkatresz alkatresz) throws RosszGyartasiev, RosszAzonosito {
+    public void addAlkatresz(Alkatresz alkatresz) throws RosszAzonosito, RosszGyartasiev, AlkatreszMarVan {
         dao.insertAlkatresz(alkatresz);
     }
 
-    public void delAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato {
-        dao.deleteAlkatresz(alkatresz);
+
+    @Override
+    public void delAlkatresz(String azonosito) throws AlkatreszNemTalalhato {
+        dao.deleteAlkatresz(azonosito);
     }
 
     @Override
-    public void updateAlkatresz(Alkatresz alkatresz) throws AlkatreszNemTalalhato {
-
+    public void updateAlkatresz(String azonosito, Alkatresz alkatresz) throws AlkatreszNemTalalhato, RosszGyartasiev, RosszAzonosito {
+        dao.updateAlkatresz(azonosito, alkatresz);
     }
 
     public Collection<Alkatresz> listAllAlkatreszGyartoAlapjan(String gyarto) {

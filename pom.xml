@@ -14,6 +14,7 @@
         <module>dao-json</module>
         <module>controller</module>
         <module>web</module>
+        <module>asd</module>
     </modules>
 
 </project>

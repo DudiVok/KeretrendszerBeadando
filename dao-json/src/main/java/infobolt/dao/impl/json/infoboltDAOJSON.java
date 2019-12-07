@@ -1,5 +1,6 @@
 package infobolt.dao.impl.json;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import infobolt.dao.AlkatreszDAO;
 
 
@@ -31,6 +32,7 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         jsonfile = new File(filepath);
         mapper = new ObjectMapper();
         mapper.registerModule(new JavaTimeModule());
+        mapper.enable(DeserializationFeature.ACCEPT_EMPTY_ARRAY_AS_NULL_OBJECT);
         if (!jsonfile.exists()) {
             try {
                 jsonfile.createNewFile();
@@ -59,9 +61,14 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         return result;
     }
 
-    public Alkatresz readAlkatresz(String azonosito) throws AlkatreszNemTalalhato, RosszAzonosito {
+    public Alkatresz readAlkatresz(String azonosito) throws AlkatreszNemTalalhato {
         Alkatresz alkatresz = new Alkatresz();
-        alkatresz.setAzonosito(azonosito);
+
+        try {
+            alkatresz.setAzonosito(azonosito);
+        } catch (RosszAzonosito rosszAzonosito) {
+            rosszAzonosito.printStackTrace();
+        }
 
         Collection<Alkatresz> alkatreszek = readAllAlkatresz();
         for (Alkatresz a : alkatreszek)
@@ -70,7 +77,7 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         throw new AlkatreszNemTalalhato();
 }
 
-    public void insertAlkatresz(Alkatresz alkatresz) throws RosszAzonosito {
+    public void insertAlkatresz(Alkatresz alkatresz) {
         try {
             readAlkatresz(alkatresz.getAzonosito());
         } catch (AlkatreszNemTalalhato alkatresznincs) {
@@ -84,15 +91,24 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         }
     }
 
-    public void updateAlkatresz(Alkatresz alkatresz) throws RosszAzonosito {
-        Collection<Alkatresz> alkatreszek = readAllAlkatresz();
+    @Override
+    public void updateAlkatresz(String azonosito, Alkatresz alkatresz) throws RosszAzonosito {
+        Collection<Alkatresz> allAlkatresz = readAllAlkatresz();
+        Collection<Alkatresz> newAlkatresz = new ArrayList<>();
+        Boolean found = false;
+
         try {
-            Alkatresz selectedAlkatresz = readAlkatresz(alkatresz.getAzonosito());
-            alkatreszek.remove(selectedAlkatresz);
-            alkatreszek.add(alkatresz);
-            mapper.writeValue(jsonfile, alkatreszek);
-        } catch (AlkatreszNemTalalhato musicNotFound) {
-            musicNotFound.printStackTrace();
+            for (Alkatresz m : allAlkatresz) {
+                if (!m.getAzonosito().equalsIgnoreCase(azonosito)) {
+                    newAlkatresz.add(m);
+                    System.out.println(azonosito);
+                    System.out.println(m.getAzonosito() + "\n");
+                } else found = true;
+            }
+
+            if (found) newAlkatresz.add(alkatresz);
+
+            mapper.writeValue(jsonfile, newAlkatresz);
         } catch (JsonGenerationException e) {
             e.printStackTrace();
         } catch (JsonMappingException e) {
@@ -102,15 +118,15 @@ public class infoboltDAOJSON implements AlkatreszDAO {
         }
     }
 
-    public void deleteAlkatresz(Alkatresz alkatresz){
-        Collection<Alkatresz> alkatreszek = readAllAlkatresz();
+
+    public void deleteAlkatresz(String azonosito){
+        Collection<Alkatresz> allAlkatresz = readAllAlkatresz();
+        Collection<Alkatresz> newAlkatresz = new ArrayList<Alkatresz>();
         try {
-            if (alkatreszek.contains(alkatresz)) {
-                alkatreszek.remove(alkatresz);
-                mapper.writeValue(jsonfile, alkatreszek);
-            } else throw new AlkatreszNemTalalhato();
-        } catch (AlkatreszNemTalalhato alkatreszNemTalalhato) {
-            alkatreszNemTalalhato.printStackTrace();
+            for (Alkatresz m : allAlkatresz)
+                if (!m.getAzonosito().equalsIgnoreCase(azonosito))
+                    newAlkatresz.add(m);
+            mapper.writeValue(jsonfile, newAlkatresz);
         } catch (JsonGenerationException e) {
             e.printStackTrace();
         } catch (JsonMappingException e) {
